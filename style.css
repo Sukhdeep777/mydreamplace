@@ -75,6 +75,7 @@ nav ul {
     letter-spacing: 2%;
     line-height: 20px;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .header_account--register {
