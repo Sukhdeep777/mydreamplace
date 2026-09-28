@@ -97,18 +97,17 @@ nav ul {
     position: relative;
 }
 
-/* .main_dreamvacation--img,.main_dreamvacation--text, .main_dreamvacation--search {
+/* .main_dreamvacation--img,.main_dreamvacation--text {
     position: absolute;
 } */
 
 .main_dreamvacation--text {
     color: var(--principal-color);
     text-align: center;
-    
+    font-size: clamp(12px,100%,18px);
+    top: 20%;
 }
 
 .main_dreamvacation--img img {
-    /* width: 1240px;
-    height: 500px; */
     width: 100%;
 }
