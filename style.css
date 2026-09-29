@@ -144,5 +144,21 @@ nav ul {
 }
 
 .main_covid{
-    margin-top: 120px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    background-color: var(--covid-advise);
+    padding: 20px 24px;
+    gap: 19px;
+    width: 90%;
+    margin-bottom: 50px;
+    border-radius: 8px;
+}
+
+.main_covid--text{
+    font-size: 16px;
+}
+
+.main_covid--text span a {
+    color: var(--button-color);
 }
