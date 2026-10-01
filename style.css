@@ -29,7 +29,6 @@ body {
 header{
     display: flex;
     width: 100%;
-    max-width: 1240px;
     justify-content: space-between;
     padding: 22px 20px;
 }
@@ -53,6 +52,11 @@ nav ul {
 }
 
 /* MAIN ---------------- */
+
+main{
+    width: 100%;
+}
+
 .main_dreamvacation{ 
     position: relative;
     display: flex;
@@ -62,9 +66,9 @@ nav ul {
 }
 
 .main_dreamvacation--img {
+    width: 100%;
+    height: 500px;
     position: relative;    
-    width: clamp(250px,100dvw,1240px);
-    height: clamp(150px,100vh,500px);
 }
 
 .main_dreamvacation--img img{
@@ -72,8 +76,6 @@ nav ul {
     height: 100%;
     filter: brightness(0.7);
     object-fit: cover;
-    object-position: 50% 20%;
-    position: absolute;
 }
 
 .main_dreamvacation--text {
@@ -99,19 +101,17 @@ nav ul {
     width: 100%;
     display: flex;
     justify-content: center;
-    box-shadow: 0px 9px 18px -2px rgba(0,0,0,0.15);
 }
 
 .main_search {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: clamp(300px,100%,1006px);
-    height: 100%;
     background-color: var(--principal-color);
-    padding: 10px 0px;
+    padding: 10px 12px;
     border-radius: 6px;
     gap: 12px;
+    box-shadow: 0px 9px 18px -2px rgba(0,0,0,0.15);
 }
 
 .dreamvacation_help {
@@ -121,7 +121,7 @@ nav ul {
 
 .dreamvacation_search-input {
     position: relative;
-    width: 90%;
+    width: 100%;
 }
 
 .dreamvacation_search-input input{
@@ -142,7 +142,8 @@ nav ul {
 
 .main_search button{
     display: inline-block;
-    width: 88%;
+    width: 100%;
+    padding: 12px 50px;
     height: 44px;
     color: var(--principal-color);
     background-color: var(--button-color);
@@ -181,6 +182,7 @@ h2 {
     font-size: 28px;
     line-height: 1;
     text-align: center;
+    margin-bottom: 24px;
 }
 
 .help_choose-country p {
@@ -188,7 +190,11 @@ h2 {
     line-height: 1.4;
     letter-spacing: 0.02em;
     margin-bottom: 30px;
-    margin-top: 16px;
+}
+
+.help_choose-country h2{
+    margin: 0;
+    margin-bottom: 16px;
 }
 
 .choose_country{
@@ -199,7 +205,7 @@ h2 {
 }
 
 .choose_country--option img {
-    width: 170px;
+    width: 100%;
 }
 
 .country_option--text{
@@ -279,5 +285,98 @@ h3{
 }
 
 .popular_hotels{
-    margin-top: 60px;
+    margin: 60px 0;
+}
+
+.popular_hotels--option{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hotels_option{
+    width: 295px;
+}
+
+.hotels_option img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.hotels_option h3 {
+    margin-top: 14px;
+    margin-bottom: 6px;
+}
+
+/* MOBILE APPLICATION */
+
+.mobile_application1 {
+    position: relative;
+    width: 95%;
+    height: 280px;
+    max-width: 1240px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden; /* Corta la imagen de la playa en las esquinas redondeadas */
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.application_ad--img1 {
+    width: 100%;
+    height: 280px;
+    position: absolute;
+    z-index: 1;
+}
+
+.application_ad--img1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.application_ad--img2 {
+    position: absolute;
+    right: -80px; /* Lo fijamos al borde derecho */
+    bottom: -90px; /* Se apoya en la parte inferior */
+    height: 120%; /* Le damos suficiente altura para que sobresalga */
+    width: auto;
+    z-index: 2;
+}
+
+.application_ad--img2 img{
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    transform: rotate(-10deg);
+}
+
+.application_ad--text {
+    position: relative;
+    z-index: 3;
+    height: 152px;
+    padding-left: 20px;
+    color: #ffffff;
+    top: 10%;
+}
+
+.application_ad--text h2 {
+    font-size: 20px;
+    text-align: start;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    max-width: 100%;
+}
+
+.application_ad--text button {
+    padding: 6px 9px;
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
