@@ -114,6 +114,11 @@ nav ul {
     gap: 12px;
 }
 
+.dreamvacation_help {
+    width: 100%;
+    max-width: 1240px;
+}
+
 .dreamvacation_search-input {
     position: relative;
     width: 90%;
@@ -174,14 +179,14 @@ nav ul {
 
 h2 {
     font-size: 28px;
-    line-height: 100%;
+    line-height: 1;
     text-align: center;
 }
 
 .help_choose-country p {
     font-size: 16px;
-    line-height: 140%;
-    letter-spacing: 2%;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
     margin-bottom: 30px;
     margin-top: 16px;
 }
@@ -210,40 +215,68 @@ h3{
     margin: 0;
     margin-top: 6px;
     font-size: 14px;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
 }
+
 
 .inspiration_trip {
     margin-top: 24px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     position: relative;
+    gap: 20px;
 }
 
-.inspiration_trip--img {
-    width: 100%;
-    min-width: 200px;
+.inspiration_trip--card {
+    position: relative; /* Limita el degradado y el texto a la imagen */
+    width: 90%;
     max-width: 400px;
-    height: 280px;
+    max-height: 280px;
+    aspect-ratio: 4 / 3;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
-.inspiration_trip--img img{
+.inspiration_trip--card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
-.inspiration_trip--text{
+.gradient {
     position: absolute;
-    /* color: var(--principal-color); */
-    top: 158px;
-    width: 360px;
-    color: var(--principal-color);
-} 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.2) 60%, transparent 100%);
+}
 
-.inspiration_trip--text h2{}
+.inspiration_trip--text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.inspiration_trip--text h2 {
+    margin: 0;
+    line-height: 1.2;
+    text-align: start;
+}
+
+.inspiration_trip--text p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 6px;
+    letter-spacing: 0.02em; 
+    width: 100%; 
+}
 
 .popular_hotels{
     margin-top: 60px;
