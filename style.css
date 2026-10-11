@@ -435,6 +435,10 @@ footer{
     justify-content: center;
 }
 
+.footer_dreamplace-item{
+    width: 190px;
+}
+
 .footer_dreamplace--logo {
     width: 225px;
     height: 70px;
@@ -468,9 +472,6 @@ footer{
     letter-spacing: 0.02rem;
 }
 
-.footer_dreamplace-item{
-    width: 190px;
-}
 
 .footer_dreamplace-item ul {
     margin-top: 20px;
