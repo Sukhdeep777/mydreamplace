@@ -139,6 +139,10 @@ input::placeholder{
     width: 100%;
 }
 
+.dreamvacation_search-input input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
 .dreamvacation_search-input input{
     background-color: var(--input-color);
     border-radius: 4px;
@@ -181,10 +185,12 @@ input::placeholder{
 
 .main_covid--text{
     font-size: 16px;
+    color: var(--text-color);
 }
 
 .main_covid--text span a {
     color: var(--button-color);
+    text-decoration: none;
 }
 
 /* TRAVEL HELP */
@@ -203,8 +209,8 @@ h2 {
 .help_choose-country p {
     font-size: 16px;
     line-height: 1.4;
-    letter-spacing: 0.02em;
     margin-bottom: 30px;
+    color: var(--text-color);
 }
 
 .help_choose-country h2{
@@ -232,7 +238,7 @@ h3{
     font-size: 20px;
 }
 
-.country_option--text p{
+.country_option--text p, .hotels_option p{
     margin: 0;
     margin-top: 6px;
     font-size: 14px;
@@ -450,6 +456,7 @@ footer{
 .footer_dreamplace--logo p{
     color: var(--gray-text-color);
     margin-top: 6px;
+    font-size: 14px;
 }
 
 .copy {
@@ -710,7 +717,7 @@ footer{
 
     .application_ad--text{
         margin-left: 69px;
-        top: 10%;
+        top: 15%;
     }
 
     .application_ad--text h2{
@@ -731,4 +738,10 @@ footer{
     .application_ad--text button {
         padding: 12px 18px;
     }
+
+    /* footer */
+    .footer_dreamplace-item {
+        text-align: start;
+    }
+
 }
