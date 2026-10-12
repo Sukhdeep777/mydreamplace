@@ -34,6 +34,7 @@ body {
 header{
     display: flex;
     width: 100%;
+    max-width: 1240px;
     justify-content: space-between;
     padding: 22px 20px;
 }
@@ -81,7 +82,7 @@ main{
     height: 100%;
     filter: brightness(0.7);
     object-fit: cover;
-    object-position: 50% 25%;
+    object-position: 50% 30%;
 }
 
 .main_dreamvacation--text {
@@ -96,6 +97,10 @@ main{
 .main_dreamvacation--text h1{
     margin-bottom: 20px;
     font-size: 32px;
+}
+
+.main_dreamvacation--text p {
+    letter-spacing: 0.02em;
 }
 
 .main_dreamvacation--search {
@@ -329,12 +334,10 @@ h3{
 
 .mobile_application1 {
     position: relative;
-    margin: 0 auto;
     border-radius: 16px;
     overflow: hidden; /* Corta la imagen de la playa en las esquinas redondeadas */
     display: flex;
     flex-direction: column;
-    align-items: space-between;
     height: 100%;
 }
 
@@ -355,8 +358,8 @@ h3{
 .application_ad--img2 {
     position: absolute;
     right: -30%; /* Lo fijamos al borde derecho */
-    bottom: -70px; /* Se apoya en la parte inferior */
-    height: 140%; /* Le damos suficiente altura para que sobresalga */
+    bottom: -10%; /* Se apoya en la parte inferior */
+    height: 110%; /* Le damos suficiente altura para que sobresalga */
     z-index: 2;
 }
 
@@ -370,8 +373,8 @@ h3{
 .application_ad--text {
     position: relative;
     z-index: 3;
-    height: 152px;
-    padding: 10px 12px;
+    padding: 20px;
+    width: 70%;
     color: #ffffff;
     top: 10%;
 }
@@ -386,7 +389,7 @@ h3{
 
 .application_ad--text button {
     padding: 6px 9px;
-    background-color: #0066ff;
+    background-color: var(--button-color);
     color: white;
     border: none;
     border-radius: 6px;
@@ -664,6 +667,14 @@ footer{
         background-color: var(--button-color);
         border-radius: 6px;
     }
+    /* main */
+    .main_dreamvacation--img {
+        max-width: 1240px;
+    }
+
+    .main_dreamvacation--img img{
+        border-radius: 10px;
+    }
 
     /* inputs */
     .inputone{
@@ -692,14 +703,14 @@ footer{
 
     /* copy */
     .copy {
-        padding-right: 250px;
+        padding-right: 18%;
     }
 
  /* AD */
 
     .application_ad--text{
         margin-left: 69px;
-        top: 18%;
+        top: 10%;
     }
 
     .application_ad--text h2{
