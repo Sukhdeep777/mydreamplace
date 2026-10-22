@@ -156,13 +156,14 @@ main{
 .other-options_line p{
     position: absolute;
     top: 50%;
-    left: 50px;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 14px;
     letter-spacing: 0.02rem;
     line-height: 1.4;
     padding: 3px 16px;
     background-color: var(--principal-color);
+    white-space: nowrap;
 }
 
 
