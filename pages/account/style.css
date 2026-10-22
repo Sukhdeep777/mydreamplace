@@ -122,7 +122,6 @@ main{
 .checkbox label {
     font-size: 14px;
     letter-spacing: 0.02rem;
-    color: var(--gray-text-color);
 }
 
 .fgt-passwd a{
@@ -164,7 +163,6 @@ main{
     line-height: 1.4;
     padding: 3px 16px;
     background-color: var(--principal-color);
-    color: var(--gray-text-color);
 }
 
 
@@ -192,7 +190,7 @@ main{
     font-weight: 500;
 }
 
-.sign-google_text {
+.sign-google_text , .no-account, .other-options_line p, .checkbox label {
     color: var(--gray-text-color);
 }
 
@@ -200,4 +198,13 @@ main{
     background-color: var(--facebook);   
     color: var(--principal-color);
     margin-bottom: 30px;
+}
+
+.no-account{
+    font-size: 16px;
+}
+
+.register a{
+    text-decoration: none;
+    color: var(--button-color);
 }
