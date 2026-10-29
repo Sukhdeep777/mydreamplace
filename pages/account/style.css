@@ -58,6 +58,26 @@ main{
     max-width: 400px;
     text-align: center;
     margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img{
+    position: relative;
+    width: 100%;
+    max-width: 285px;
+    height: 250px;
+    background-color: #FEE2654D;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
+.img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 .signin-title {
@@ -74,10 +94,15 @@ main{
     font-size: 16px;
     text-align: center;
     line-height: 140%;
+    font-weight: 400;
     letter-spacing: 0.02rem;
     color: var(--gray-text-color);
     margin-top: 12px;
     margin-bottom: 20px;
+}
+
+.span-email{
+    color: var(--text-color)
 }
 
 .form-input{
@@ -155,6 +180,11 @@ main{
     color: var(--principal-color);
     border: none;
     border-radius: 6px;
+    cursor: pointer;
+}
+
+.ck-box{
+    margin-top: 20px;
 }
 
 .email-crtpass {
