@@ -27,6 +27,10 @@ body {
     align-items: center;
 }
 
+.none{
+    display: none;
+}
+
 /* Header */
 
 header{
@@ -62,6 +66,19 @@ main{
     margin-bottom: 40px;
 }
 
+.title-passwd{
+   margin-bottom: 0;
+}
+
+.specific-passwd {
+    font-size: 16px;
+    text-align: center;
+    line-height: 140%;
+    letter-spacing: 0.02rem;
+    color: var(--gray-text-color);
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
 
 .form-input{
     text-align: start;
@@ -133,11 +150,21 @@ main{
 
 .continue-email{
     margin-top: 20px;
-    margin-bottom: 24px;
+    margin-bottom: 36px;
     background-color: var(--button-color);
     color: var(--principal-color);
     border: none;
     border-radius: 6px;
+}
+
+.email-crtpass {
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+.email-register{
+    margin-top: 30px;
+    margin-bottom: 36px;
 }
 
 .other-options_line{
@@ -208,4 +235,21 @@ main{
 .register a{
     text-decoration: none;
     color: var(--button-color);
+}
+
+.privacy{
+    text-align: start;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.02rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    main{
+        margin-top: 92px;
+    }
+    .no-account{
+        margin-top: 60px;
+    }
 }
