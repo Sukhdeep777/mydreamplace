@@ -75,6 +75,7 @@ nav ul {
 
 .main_dreamvacation--search {
     position: absolute;
+    left: 50%;
     transform: translate(-50%);
     width: 100%;
     display: flex;
@@ -160,6 +161,29 @@ input::placeholder{
 .main_covid--text span a {
     color: var(--button-color);
     text-decoration: none;
+}
+    /* Results */
+
+.result-found{
+    width: 100%;
+    margin-top: 350px;
+}
+
+.options--filters{
+    display: flex;
+    gap: 20px;
+}
+
+.input{
+    width: 100%;
+    padding: 11px 75px 12px 42px;
+    background-color: var(--input-color);
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+}
+
+.options-search--name {
+    margin-bottom: 20px;
 }
 
 /* FOOTER */
