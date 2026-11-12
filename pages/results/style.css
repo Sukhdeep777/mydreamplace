@@ -238,6 +238,7 @@ footer{
     margin-top: 60px;
     padding: 10px 50px 10px 0;
     gap: 2px;
+    color: var(--gray-text-color);
 }
 
 .copy-logo{
