@@ -36,7 +36,7 @@ header{
     width: 100%;
     max-width: 1240px;
     justify-content: space-between;
-    padding: 22px;
+    padding:22px 0;
 }
 
 .header_dreamplace--logo {
